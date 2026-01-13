@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 🎀</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="intro-body fade-in">
+
+  <!-- INTRO SECTION -->
+  <section class="intro-center">
+    <img src="Mine1.jpg" class="intro-cat" alt="Cute cat">
+    <h1 class="intro-title">Happy Birthday Lakshmi ji 🎀</h1>
+    <p class="intro-sub">A cozy little surprise is waiting for you 💗</p>
+    <button id="startBtn" class="cute-btn">Open Surprise 🎁</button>
+  </section>
+
+  <script>
+    document.getElementById("startBtn").addEventListener("click", () => {
+      document.body.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = "main.html";
+      }, 800);
+    });
+  </script>
+
+</body>
+</html>
