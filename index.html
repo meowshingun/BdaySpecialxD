@@ -2,31 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Happy Birthday 🎀</title>
+  <title>Happy Birthday Lakshmi ji 🎂</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 
-<body class="intro-body fade-in">
+<body class="main-body fade-in">
 
-  <!-- INTRO SECTION -->
-  <section class="intro-center">
-    <img src="Mine1.jpg" class="intro-cat" alt="Cute cat">
-    <h1 class="intro-title">Happy Birthday Lakshmi ji 🎀</h1>
-    <p class="intro-sub">A cozy little surprise is waiting for you 💗</p>
-    <button id="startBtn" class="cute-btn">Open Surprise 🎁</button>
-  </section>
+  <!-- CONFETTI BACKGROUND -->
+  <canvas id="confettiCanvas"></canvas>
 
-  <script>
-    document.getElementById("startBtn").addEventListener("click", () => {
-      document.body.classList.add("fade-out");
-      setTimeout(() => {
-        window.location.href = "main.html";
-      }, 800);
-    });
-  </script>
+  <!-- THEME TOGGLE -->
+  <button id="themeToggle" class="theme-toggle">Dark Theme 🌙</button>
+
+  <main class="page-wrap">
+
+    <!-- HEADER -->
+    <header class="page-header">
+      <h1 class="page-title">Happy Birthday Lakshmi ji 🎀</h1>
+    </header>
+
+    <!-- LETTER SECTION -->
+    <section class="letter-section">
+      <article class="paper-letter handwritten">
+
+        <h2>From Meowshin 💖🐾</h2>
+
+        <div class="letter-body">
+          <p>Hello my dear Lakshmi ji 💖,</p>
+
+          <p>
+            First of all, wishing you a <strong>veryyyyy happyyyyy birthdayyyyyyyy 🎉🎂💫</strong><br>
+            May your day be as beautiful, soft, and special as you are 🥰
+          </p>
+
+          <p>
+            Secondly, thank you <strong>sooooo much</strong> for coming into my life, babyy 💕  
+            I’m genuinely so grateful to have you in my life. Honestly, it was all so unexpected —
+            from being just friends to becoming a couple 💗✨
+          </p>
+
+          <p>
+            Confessing my feelings to you was one of the <strong>best decisions</strong> of my life 🫶  
+            From that day onwards, my life completely changed.
+            I went from being the loneliest person to the happiest one 🥹💞
+          </p>
+
+          <p>
+            And listen carefully — I never, ever thought of leaving you, and I never will.  
+            You are my <strong>cutie patooty Lakshmi ji 🐾💖</strong>, my safe place, my happiness.
+          </p>
+
+          <blockquote class="dialogue">
+            “Log bhaukte rahenge, bas MKC bolo aur move on” 😂✨
+          </blockquote>
+
+          <p>
+            There are still sooo many surprises left for you, and I’ll give them to you
+            one by one 😼🎁💗  
+            This is just the beginning.
+          </p>
+
+          <p>
+            Once again, wishing you a <strong>very very happy birthday 🎀🎂</strong><br>
+            I love you <strong>always and foreverrrr</strong>, babyy 💞  
+            Enjoy your day to the fullest 🌸✨
+          </p>
+
+          <p class="sign">— Meowshin 💗</p>
+        </div>
+
+      </article>
+    </section>
+
+    <!-- MEMORIES -->
+    <section class="memories-section">
+      <h3 class="section-title">Our Memories 📸💕</h3>
+      <div class="memories-row">
+        <img src="Memory1.png">
+        <img src="Memory2.jpg">
+        <img src="Memory3.webp">
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      Made with endless love by Meowshin 💗🐾
+    </footer>
+
+  </main>
 
 </body>
 </html>
